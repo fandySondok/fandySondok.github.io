@@ -1,147 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
   <head>
-    <title>Portfolio Fandy</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Fandy Sondok</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
+  <body class="is-preload">
     <!-- Header -->
-    <header
-      class="w3-display-container w3-content w3-center"
-      style="max-width: 2000px"
-    >
-      <img
-        class="w3-image-prof"
-        src="img/profile2.jpg"
-        alt="Me"
-        width="1500"
-        height="600"
-      />
-      <div
-        class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-dark-grey w3-center"
-      >
-        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Fandy Sondok</h1>
-        <h5 class="w3-hide-large" style="white-space: nowrap">Fandy Sondok</h5>
-        <h3 class="w3-hide-medium w3-hide-small">EMBEDDED PROGRAMMER</h3>
-      </div>
-
-      <!-- Navbar (placed at the bottom of the header image) -->
-      <div
-        class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small"
-        style="bottom: -16px"
-      >
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="image avatar"
+          ><img src="images/avatar.jpeg" alt=""
+        /></a>
+        <h1>
+          <strong>I am Fandy</strong>,<br />
+          a embedded software engineer,<br />
+          i enjoyed and loved<br />
+          learning new things.
+        </h1>
       </div>
     </header>
 
-    <!-- Navbar on small screens -->
-    <div
-      class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium"
-    >
-      <div class="w3-bar w3-light-grey">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-      </div>
+    <!-- Main -->
+    <div id="main">
+      <!-- One -->
+      <section id="one">
+        <header class="major">
+          <h2>My Portfolio</h2>
+        </header>
+      </section>
+
+      <!-- Two -->
+      <section id="two">
+        <h2>Recent Work</h2>
+        <div class="row">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/hangman-full.png" class="image fit thumb"
+              ><img src="images/thumbs/hangman.png" alt=""
+            /></a>
+            <h3>Hangman Game</h3>
+            <p>
+              The hangman game was developed using GTK 3 and C programming
+              language that running on Linux. Integrate with CSS and sound to
+              make game more interactive. This game can display image, has
+              touchscreen keyboard access, can be integrated with the default
+              keyboard, and can display a pop-up screen that adds flexibility to
+              the game.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a
+              href="images/fulls/sensor-gateway-full.png"
+              class="image fit thumb"
+              ><img src="images/thumbs/sensor-gateway.png" alt=""
+            /></a>
+            <h3>Sensor Gateway</h3>
+            <p>
+              A sensor gateway is a system that integrates application developed
+              using the c programming language with a PostgreSQL database and
+              Node-Red on a single-board computer such as Raspberry Pi. This
+              gateway has feature to enable/disable sensor channels, set time
+              interval for acquisition data, has data calibration feature and
+              allow monitoring of the sensor data history from each active
+              channel.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a
+              href="images/fulls/iot-lorawan-system-full.jpg"
+              class="image fit thumb"
+              ><img src="images/thumbs/iot-lorawan-system.jpg" alt=""
+            /></a>
+            <h3>IoT Lorawan System</h3>
+            <p>
+              This LoRa-based control and monitoring system is built using ESP32
+              and LoRa modules using the Lorawan communication protocol. The
+              system consists of 38 nodes and 1 LoRa gateway in a factory in
+              Cikarang, Indonesia to monitor and control pump wirelessly on each
+              control panel system in the factory.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a
+              href="images/fulls/poultry-farming-monitoring-full.jpeg"
+              class="image fit thumb"
+              ><img src="images/thumbs/poultry-farming-monitoring.jpeg" alt=""
+            /></a>
+            <h3>Poultry Farming Monitoring</h3>
+            <p>
+              The Poultry Farming Monitoring Device is designed to monitor 6
+              parameters (CO2, NH3, Humidity, Temperature, Wind Speed, Light
+              Intensity) based on IoT. The commonication protocol used is MQTTS,
+              which employs the samesecurity concept standars as https to
+              prevent data leakage that has been a sensitive issue in IoT
+              development. This system is a prototype that has a "plug and play"
+              concept, which increases the flexibility of the sensors to be
+              used. The Device can store sensor measurement data locally and
+              provide a web server to download the data through a local network.
+              Using the MQTTS protocol, user can also configure the sensor
+              measurement interval dynamically.
+            </p>
+          </article>
+        </div>
+        <ul class="actions">
+          <li><a href="#" class="button">Full Portfolio</a></li>
+        </ul>
+      </section>
+
+      <!-- Three -->
+      <section id="three">
+        <h2>Get In Touch</h2>
+        <div class="row">
+          <div class="col-4 col-12-small">
+            <ul class="labeled-icons">
+              <li>
+                <h3 class="icon solid fa-home">
+                  <span class="label">Address</span>
+                </h3>
+                Jakarta, Indonesia
+              </li>
+              <li>
+                <h3 class="icon solid fa-envelope">
+                  <span class="label">Email</span>
+                </h3>
+                fandysondok@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-    <!-- Page content -->
-    <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-      <!-- Images (Portfolio) -->
-      <img
-        src="img/Slide2.PNG"
-        alt="Ocean"
-        class="w3-image"
-        width="1000"
-        height="500"
-      />
-      <img
-        src="img/Slide6.PNG"
-        alt="Ocean II"
-        class="w3-image w3-margin-top"
-        width="1000"
-        height="500"
-      />
-      <img
-        src="img/Slide7.PNG"
-        alt="Falls"
-        class="w3-image w3-margin-top"
-        width="1000"
-        height="500"
-      />
-      <img
-        src="img/Slide8.PNG"
-        alt="Skies"
-        class="w3-image w3-margin-top"
-        width="1000"
-        height="500"
-      />
-      <img
-        src="img/Slide9.PNG"
-        alt="Mountains"
-        class="w3-image w3-margin-top"
-        width="1000"
-        height="500"
-      />
-      <img
-        src="img/Slide11.PNG"
-        alt="Mountains"
-        class="w3-image w3-margin-top"
-        width="1000"
-        height="500"
-      />
-      <img
-        src="img/Slide10.PNG"
-        alt="Mountains"
-        class="w3-image w3-margin-top"
-        width="1000"
-        height="500"
-      />
 
-      <!-- Contact -->
-      <div
-        class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top"
-        id="contact"
-      >
-        <h3 class="w3-center">Contact</h3>
-        <hr />
-        <p>via email : fandysondok@gmail.com</p>
-        <p>linkedin : https://www.linkedin.com/in/fandysondok/</p>
-
-        <!-- <form action="/action_page.php" target="_blank">
-          <div class="w3-section">
-            <label>Name</label>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              required
-              name="Name"
-            />
-          </div>
-          <div class="w3-section">
-            <label>Email</label>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              required
-              name="Email"
-            />
-          </div>
-          <div class="w3-section">
-            <label>Message</label>
-            <input class="w3-input w3-border" required name="Message" />
-          </div>
-          <button type="submit" class="w3-button w3-block w3-dark-grey">
-            Send
-          </button>
-        </form> -->
-        <br />
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/fandysondok"
+              class="icon brands fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/fandySondok"
+              class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+        </ul>
       </div>
+    </footer>
 
-      <!-- End page content -->
-    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
